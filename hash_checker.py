@@ -46,7 +46,7 @@ def read_input(filename, directory):
                 filename = filename[len(filename) - 1]
                 print(f'{filename} NOT FOUND')
 
-#   check hash-sum if encryption method sha1 / проверка хэш-суммы файла, зашифрованного sha1
+#   check hash-sum if encryption method sha1 / проверка хэш-суммы файла, sha1
 def sha1_check(file_path, file_hash):
     hash_object = hashlib.sha1()
     filename = file_path.split('\\')
@@ -62,7 +62,7 @@ def sha1_check(file_path, file_hash):
     else:
         print(f'{filename} OK')
 
-#   check hash-sum if encryption method sha256 / проверка хэш-суммы файла, зашифрованного sha256
+#   check hash-sum if encryption method sha256 / проверка хэш-суммы файла, sha256
 def sha256_check(file_path, file_hash):
     hash_object = hashlib.sha256()
     filename = file_path.split('\\')
@@ -78,7 +78,7 @@ def sha256_check(file_path, file_hash):
     else:
         print(f'{filename} OK')
 
-#   check hash-sum if encryption method md5 / проверка хэш-суммы файла, зашифрованного md5
+#   check hash-sum if encryption method md5 / проверка хэш-суммы файла, md5
 def md5_check(file_path, file_hash):
     hash_object = hashlib.md5()
     filename = file_path.split('\\')
